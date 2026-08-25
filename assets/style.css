@@ -1,39 +1,38 @@
-/* training-log site — shared styles
-   Palette: 温かみのあるニュートラル + 炎のオレンジ(継続の🔥)を一点投入 */
+/* training-log site — shared styles (Apple 風ニュートラル + アクセントに炎のオレンジ) */
 :root {
-  --bg: #FAF7F4;
-  --surface: #FFFFFF;
-  --surface-hi: #F1EBE5;
-  --ink: #1C1714;
-  --muted: #6E645D;
-  --line: #E8E0D9;
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --surface-hi: #ececf0;
+  --ink: #1d1d1f;
+  --muted: #86868b;
+  --line: #e5e5ea;
   --ember: #E8481C;
-  --ember-soft: #FBE9E2;
-  --shadow: 0 2px 24px rgba(28, 23, 20, 0.08);
+  --ember-soft: #fdeee6;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141110;
-    --surface: #1E1917;
-    --surface-hi: #292220;
-    --ink: #F5EFE9;
-    --muted: #A69B92;
-    --line: #2E2724;
+    --bg: #161618;
+    --surface: #232326;
+    --surface-hi: #2c2c30;
+    --ink: #f5f5f7;
+    --muted: #98989e;
+    --line: #313135;
     --ember: #FF6A3D;
-    --ember-soft: #33201A;
-    --shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+    --ember-soft: #3a2a22;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 }
 :root[data-theme="dark"] {
-  --bg: #141110;
-  --surface: #1E1917;
-  --surface-hi: #292220;
-  --ink: #F5EFE9;
-  --muted: #A69B92;
-  --line: #2E2724;
+  --bg: #161618;
+  --surface: #232326;
+  --surface-hi: #2c2c30;
+  --ink: #f5f5f7;
+  --muted: #98989e;
+  --line: #313135;
   --ember: #FF6A3D;
-  --ember-soft: #33201A;
-  --shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+  --ember-soft: #3a2a22;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,15 +45,15 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
 
 .display {
-  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1.4;
   text-wrap: balance;
 }
@@ -74,7 +73,6 @@ body {
 }
 .brand {
   display: flex; align-items: center; gap: 10px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 800; font-size: 1.05rem;
   color: var(--ink); text-decoration: none;
 }
@@ -141,7 +139,6 @@ a:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; border-r
   display: inline-flex; align-items: center; gap: 4px;
   background: var(--ember-soft); color: var(--ember);
   font-weight: 800; font-size: 0.78rem;
-  font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 4px 10px; border-radius: 999px;
 }
 .phone-title { font-weight: 700; font-size: 0.85rem; color: var(--muted); }
@@ -180,7 +177,6 @@ a:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; border-r
 .section-eyebrow {
   color: var(--ember); font-weight: 800; font-size: 0.8rem;
   letter-spacing: 0.12em; text-transform: uppercase;
-  font-family: "M PLUS Rounded 1c", sans-serif;
   margin-bottom: 10px;
 }
 .section h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin-bottom: 14px; }
