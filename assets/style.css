@@ -78,8 +78,7 @@ body {
 }
 .brand-mark {
   width: 30px; height: 30px; border-radius: 9px;
-  background: var(--ember); color: #FFF;
-  display: grid; place-items: center; font-size: 16px;
+  display: block; object-fit: cover;
 }
 .site-nav { display: flex; gap: 22px; }
 .site-nav a {
