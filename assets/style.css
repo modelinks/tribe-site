@@ -276,6 +276,7 @@ a:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; border-r
 }
 .doc th { background: var(--surface-hi); font-weight: 700; white-space: nowrap; }
 .table-scroll { overflow-x: auto; }
+.doc hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 8px; }
 
 /* ---- responsive ---- */
 @media (max-width: 860px) {
